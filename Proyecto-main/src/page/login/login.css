@@ -1,0 +1,250 @@
+/* Estilos para el Login */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.datoslogin {
+    position: relative;
+    width: 500px;
+    height: 540px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s ease, height .2s ease;
+}
+
+.icono-cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #090f1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1.8em;
+    color: #f1efef;
+}
+
+.contenedor-form-login h2 {
+    font-size: 2.7em;
+    color: #f1efef;
+    text-align: center;
+}
+
+/* Específicos del login */
+.contenedor-input-login {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #f1efef;
+    margin: 30px 0;
+}
+
+.contenedor-input-login label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .4s;
+    color: #f1efef;
+}
+
+.contenedor-input-login input:focus ~ label,
+.contenedor-input-login input:valid ~ label {
+    top: -5px;
+}
+
+.contenedor-input-login input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: #f1efef;
+    padding: 0 35px 0 5px;
+    margin-top: 15px;
+}
+
+.contenedor-input-login .icono {
+    position: absolute;
+    right: 8px;
+    font-size: 1.4em;
+    color: #f1efef;
+    line-height: 57px;
+}
+
+.recordar-login {
+    font-size: .9em;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.recordar-login label input {
+    accent-color: #090f1d;
+    margin-right: 3px;
+}
+
+.recordar-login a {
+    color: #f1efef;
+    text-decoration: none;
+}
+
+.recordar-login a:hover {
+    text-decoration: underline;
+}
+
+.btnIniciar-login {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #090f1d;
+    color: #f1efef;
+}
+
+.registrar-login {
+    font-size: .9em;
+    color: #f1efef;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.registrar-login p a {
+    color: #f1efef;
+    text-decoration: none;
+}
+
+.registrar-login p a:hover {
+    text-decoration: underline;
+}
+
+.icono-ojo {
+    position: absolute;
+    right: 10px; /* Coloca el icono del ojo a la derecha */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff; /* Cambiado a blanco */
+
+}
+.registrar-login a {
+    color: #000000;
+}
+/* Media query para pantallas de hasta 768px */
+@media screen and (max-width: 768px) {
+    .datoslogin {
+        width: 400px; /* Reduce el ancho */
+        height: 480px; /* Reduce la altura */
+        border-width: 2px; /* Bordes más delgados */
+        border-radius: 15px; /* Bordes más suaves */
+    }
+
+    .icono-cerrar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em; /* Tamaño reducido del icono */
+    }
+
+    .contenedor-form-login h2 {
+        font-size: 2em; /* Texto más pequeño */
+    }
+
+    .contenedor-input-login {
+        height: 50px; /* Reduce la altura del input */
+        margin: 20px 0; /* Menor margen vertical */
+    }
+
+    .contenedor-input-login input {
+        font-size: 1rem; /* Fuente más pequeña */
+        padding: 0 30px 0 5px;
+    }
+
+    .contenedor-input-login .icono {
+        font-size: 1.2em; /* Icono más pequeño */
+    }
+
+    .recordar-login {
+        font-size: 0.8em; /* Texto más compacto */
+    }
+
+    .btnIniciar-login {
+        height: 40px; /* Botón más pequeño */
+        font-size: 0.9em;
+    }
+
+    .registrar-login {
+        font-size: 0.8em;
+    }
+}
+
+/* Media query para pantallas de hasta 480px */
+@media screen and (max-width: 480px) {
+    .datoslogin {
+        width: 300px; /* Ajuste significativo en el ancho */
+        height: 400px; /* Altura más reducida */
+        border-width: 1.5px; /* Bordes más finos */
+        border-radius: 10px;
+    }
+
+    .icono-cerrar {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2em;
+    }
+
+    .contenedor-form-login h2 {
+        font-size: 1.8em; /* Fuente más pequeña */
+    }
+
+    .contenedor-input-login {
+        height: 45px; /* Inputs más pequeños */
+        margin: 15px 0; /* Menor separación */
+    }
+
+    .contenedor-input-login input {
+        font-size: 0.9rem; /* Fuente compacta */
+        padding: 0 25px 0 5px;
+    }
+
+    .contenedor-input-login .icono {
+        font-size: 1em; /* Icono más pequeño */
+    }
+
+    .recordar-login {
+        font-size: 0.7em;
+    }
+
+    .btnIniciar-login {
+        height: 35px; /* Botón más compacto */
+        font-size: 0.8em;
+    }
+
+    .registrar-login {
+        font-size: 0.7em;
+    }
+}

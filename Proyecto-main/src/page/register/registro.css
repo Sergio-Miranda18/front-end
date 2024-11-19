@@ -1,0 +1,267 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto; /* Permitir el desplazamiento vertical en el cuerpo */
+}
+
+.registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.datosregistro {
+    position: relative;
+    width: 500px; /* Ajustar el ancho del formulario */
+    max-height: 80vh; /* Limitar la altura máxima del formulario */
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.1); 
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column; /* Mantener en una columna */
+    overflow: auto; /* Permitir el desplazamiento dentro del formulario */
+}
+
+/* Estilos para la barra de desplazamiento */
+.datosregistro::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.datosregistro::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.datosregistro::-webkit-scrollbar-track {
+    background: transparent; /* Fondo de la pista de la barra de desplazamiento */
+}
+
+.icono-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px; 
+    height: 35px;
+    background-color: rgba(9, 15, 29, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em; 
+    color: #f1efef;
+    transition: background-color 0.3s ease;
+}
+
+.icono-cerrar:hover {
+    background-color: rgba(9, 15, 29, 1);
+}
+
+.contenedor-form-register h2 {
+    font-size: 2em; 
+    color: #f1efef;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedor-input-resgistro  {
+    position: relative;
+    width: 100%;
+    height: 45px; 
+    border-bottom: 2px solid #f1efef;
+    margin: 25px 0; 
+}
+
+.contenedor-input-resgistro  label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em; 
+    font-weight: 600;
+    pointer-events: none;
+    transition: 0.4s;
+    color: #f1efef;
+}
+
+.contenedor-input-resgistro input:focus ~ label,
+.contenedor-input-resgistro input:valid ~ label {
+    top: -10px;
+    font-size: 0.8em; 
+}
+
+.contenedor-input-resgistro  input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1rem; 
+    color: #f1efef;
+    padding: 0 35px 0 5px;
+}
+
+.contenedor-input-resgistro  .icono {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em; 
+    color: #f1efef;
+    line-height: 45px;
+}
+
+.btnregistrar {
+    width: 100%;
+    height: 40px; 
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em; 
+    font-weight: bold;
+    background-color: #090f1d;
+    color: #f1efef;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.btnregistrar:hover {
+    background-color: #131e36;
+}
+
+.recordar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px; 
+}
+
+.recordar label {
+    color: #f1efef;
+    font-size: 0.9em; 
+}
+
+.registrar {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.registrar p {
+    color: #f1efef;
+    font-size: 0.9em; 
+}
+
+.registrar a {
+    color: #f1efef;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.registrar a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para pantallas de hasta 768px */
+@media screen and (max-width: 768px) {
+    .datosregistro {
+        width: 400px; /* Reduce el ancho */
+        padding: 15px; /* Reduce el padding */
+        border-width: 2px; /* Bordes más delgados */
+        border-radius: 15px; /* Bordes más suaves */
+    }
+
+    .icono-cerrar {
+        width: 30px; /* Icono más pequeño */
+        height: 30px;
+        font-size: 1em; /* Texto más pequeño */
+    }
+
+    .contenedor-form-register h2 {
+        font-size: 1.8em; /* Texto más pequeño */
+    }
+
+    .contenedor-input-resgistro {
+        height: 40px; /* Reduce la altura */
+        margin: 20px 0; /* Menor margen */
+    }
+
+    .contenedor-input-resgistro label {
+        font-size: 0.9em; /* Fuente más compacta */
+    }
+
+    .contenedor-input-resgistro input {
+        font-size: 1rem; /* Texto más pequeño */
+    }
+
+    .contenedor-input-resgistro .icono {
+        font-size: 1em; /* Icono más pequeño */
+    }
+
+    .btnregistrar {
+        height: 35px; /* Botón más compacto */
+        font-size: 0.8em; /* Fuente más pequeña */
+    }
+
+    .recordar label {
+        font-size: 0.8em; /* Texto más compacto */
+    }
+
+    .registrar p {
+        font-size: 0.8em; /* Texto más pequeño */
+    }
+}
+
+/* Media query para pantallas de hasta 480px */
+@media screen and (max-width: 480px) {
+    .datosregistro {
+        width: 300px; /* Ajuste significativo en el ancho */
+        padding: 10px; /* Reduce aún más el padding */
+        border-radius: 10px; /* Bordes más compactos */
+    }
+
+    .icono-cerrar {
+        width: 25px; /* Icono más pequeño */
+        height: 25px;
+        font-size: 0.9em; /* Fuente reducida */
+    }
+
+    .contenedor-form-register h2 {
+        font-size: 1.5em; /* Fuente más pequeña */
+    }
+
+    .contenedor-input-resgistro {
+        height: 35px; /* Inputs más pequeños */
+        margin: 15px 0; /* Menor separación */
+    }
+
+    .contenedor-input-resgistro label {
+        font-size: 0.8em; /* Texto más compacto */
+    }
+
+    .contenedor-input-resgistro input {
+        font-size: 0.9rem; /* Fuente ajustada */
+    }
+
+    .contenedor-input-resgistro .icono {
+        font-size: 0.9em; /* Icono más pequeño */
+    }
+
+    .btnregistrar {
+        height: 30px; /* Botón más compacto */
+        font-size: 0.7em; /* Texto reducido */
+    }
+
+    .recordar label {
+        font-size: 0.7em; /* Texto más pequeño */
+    }
+
+    .registrar p {
+        font-size: 0.7em; /* Texto más compacto */
+    }
+}

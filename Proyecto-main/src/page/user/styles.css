@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(images/bg2.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+.logo {
+    position: absolute;
+    top: 0px;
+    /* Ajusta la distancia desde la parte superior */
+    left: -400px;
+    /* Ajusta la distancia desde el lado izquierdo */
+    z-index: 1;
+}
+
+.logo-img {
+    width: 200px;
+    /* Ancho del logo */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+
+}
+
+
+
+.header1-content {
+    text-align: center;
+}
+
+.header1-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-shadow: 0 0 10px #e5e75d;
+    /* Sombra neón verde */
+    text-decoration: underline 5px #fffb12;
+    /* Línea inferior verde */
+    text-decoration-thickness: 10px;
+}
+
+.header1-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+    margin-top: 100px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: rgb(93, 182, 182);
+    color: #f9fafc;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.btn-1:hover {
+    background-color: rgb(75, 162, 162); /* Cambia el color de fondo al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.btn-1:active {
+    transform: translateY(1px); /* Efecto de pulsar */
+}
+
+
+.btn-1:hover {
+    background-color: #b75a5a; /* Color hover */
+    transform: translateY(-2px);
+}
+
+
+.Canchas {
+    padding: 10px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.Canchas-content {
+    text-align: center;
+}
+
+.Canchas-content h2 {
+    font-size: 55px;
+    line-height: 100px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 70px;
+
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 100px;
+    position: relative;
+    top: 160px;
+}
+
+.Canchas-group1 {
+    display: flex;
+    justify-content: start;
+    margin-top: 340px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+.SALONES-group {
+    display: flex;
+    justify-content: center;
+    margin-top: -170px;
+    padding-bottom: 14px;
+
+
+}
+
+.AIRE_LIBRE-group {
+    display: flex;
+    justify-content: end;
+    margin-top: -165px;
+    margin-right: 65px;
+    padding-bottom: 10px;
+
+}
+
+.Canchas-1 img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Canchas-1 img {
+    width: 150px;
+    /* Ancho del contenedor de imagen */
+    height: 150px;
+    /* Altura del contenedor de imagen */
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde */
+    border-radius: 50%;
+    /* Hace que el contenedor sea redondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border: 5px solid black;
+    /* Agregar borde negro de 2px */
+}
+
+.Canchas-img {
+    width: 100%;
+    /* Ocupa todo el espacio dentro del contenedor */
+    height: 100%;
+    /* Ocupa todo el espacio dentro del contenedor */
+    object-fit: cover;
+    /* Escala la imagen para llenar el contenedor */
+    border-radius: 50%;
+
+
+
+}
+
+.Canchas-1 h3 {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 100px;
+    color: #323337;
+    font-size: 30px;
+    margin-bottom: 15px;
+
+}
+
+.Canchas-1 {
+    display: flex;
+    /* Utiliza flexbox para los elementos hijos */
+    gap: 10px;
+
+}
+
+.Canchas-2 img {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.Canchas-2 img {
+    width: 150px;
+    /* Ancho del contenedor de imagen */
+    height: 150px;
+    /* Altura del contenedor de imagen */
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde */
+    border-radius: 50%;
+    /* Hace que el contenedor sea redondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border: 5px solid black;
+    /* Agregar borde negro de 2px */
+
+}
+
+.Canchas-img {
+    width: 100%;
+    /* Ocupa todo el espacio dentro del contenedor */
+    height: 100%;
+    /* Ocupa todo el espacio dentro del contenedor */
+    object-fit: cover;
+    /* Escala la imagen para llenar el contenedor */
+    border-radius: 50%;
+
+
+}
+
+.Canchas-2 h3 {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 30px;
+    color: #323337;
+    font-size: 30px;
+    margin-bottom: 15px;
+
+}
+
+.Canchas-2 {
+    display: flex;
+    /* Utiliza flexbox para los elementos hijos */
+    gap: 10px;
+
+}
+
+
+.Canchas-3 img {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.Canchas-3 img {
+    width: 150px;
+    /* Ancho del contenedor de imagen */
+    height: 150px;
+    /* Altura del contenedor de imagen */
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde */
+    border-radius: 50%;
+    /* Hace que el contenedor sea redondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border: 5px solid black;
+    /* Agregar borde negro de 2px */
+}
+
+.Canchas-img {
+    width: 100%;
+    /* Ocupa todo el espacio dentro del contenedor */
+    height: 100%;
+    /* Ocupa todo el espacio dentro del contenedor */
+    object-fit: cover;
+    /* Escala la imagen para llenar el contenedor */
+    border-radius: 50%;
+
+
+}
+
+.Canchas-3 h3 {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 90px;
+    color: #323337;
+    font-size: 30px;
+    margin-bottom: 15px;
+
+}
+
+.Canchas-3 {
+    display: flex;
+    /* Utiliza flexbox para los elementos hijos */
+    gap: 10px;
+}
+
+.Servicios {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(images/6197706_orig.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.Servicios-content {
+    text-align: center;
+}
+
+.Servicios-content h2 {
+    font: size 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+.Servicios-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.Servicios-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+
+}
+
+.Servicios-group2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+.Servicios-group3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+.Servicios-1 {
+    padding: 0 100px;
+}
+
+.Servicios-2 {
+    padding: 0 100px;
+}
+
+.Servicios-3 {
+    padding: 0 100px;
+}
+
+.Servicios-1 img {
+    width: 100px;
+    margin-bottom: 45px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.Servicios-2 img {
+    width: 100px;
+    margin-bottom: 28px;
+    margin-top: 20px;
+}
+
+.Servicios-3 img {
+    width: 100px;
+    margin-bottom: 28px;
+    margin-top: 20px;
+}
+
+.Servicios-1 h3 {
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+.Servicios-2 h3 {
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+.Servicios-3 h3 {
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general-2 {
+    background-image: url(images/Cancha-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(images/salones.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+.blog-Content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: #323337;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+    
+}
+
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link ul {
+margin-left: -30px;
+}
+
+.header1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -20px; /* Ajusta esta posición para subir todo el contenido */
+}
+
+.header1 {
+    padding: 40px 0 10px; /* Reduce el padding superior e inferior */
+    position: relative;
+    z-index: 5;
+}
+
+.header-links {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -5px; /* Ajusta este valor para controlar la altura */
+    right: -50px;
+    z-index: 10;
+}
+
+.header-links a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 20px; /* Ajusta el padding para un espacio más compacto */
+    color: #fffdfc;
+    font-weight: 600;
+    text-decoration: underline 5px #00ffdd;
+    text-decoration-thickness: 3px;
+    transition: color 0.3s ease;
+}
+
+.header1 h1 {
+    margin-top: 150px; /* Aumenta la separación del título con respecto al navbar */
+    font-family: 'Poppins', sans-serif;
+    font-size: 75px;
+    line-height: 1.2;
+    color: #f9fafc;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #e5e75d;
+    text-decoration: underline 5px #fffb12;
+    text-decoration-thickness: 10px;
+}
+.header-links :hover{
+    color: #fffb12;
+}
+@media(max-width: 767px) {
+    /* Header */
+    .header1 {
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    .header1-content {
+        padding: 40px 20px;
+        top: 0;
+    }
+
+    .header1-content h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-top: 60px;
+        text-decoration-thickness: 5px;
+    }
+
+    .header1-content p {
+        padding: 0 20px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    /* Header Links */
+    .header-links {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+    }
+
+    .header-links a {
+        font-size: 16px;
+        padding: 10px;
+        text-decoration-thickness: 2px;
+    }
+
+    /* Logo */
+    .logo {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-img {
+        width: 150px;
+    }
+
+    /* Canchas Section */
+    .Canchas {
+        padding: 40px 20px;
+    }
+
+    .Canchas-content h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        padding: 0;
+        margin-bottom: 20px;
+        top: 0;
+    }
+
+    .txt-p {
+        padding: 0 20px;
+        margin-bottom: 40px;
+        top: 0;
+    }
+
+    /* Grupos de Canchas */
+    .Canchas-group1,
+    .SALONES-group,
+    .AIRE_LIBRE-group {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        gap: 30px;
+    }
+
+    .Canchas-1,
+    .Canchas-2,
+    .Canchas-3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .Canchas-1 h3,
+    .Canchas-2 h3,
+    .Canchas-3 h3 {
+        position: static;
+        margin: 15px 0;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .Canchas-1 img,
+    .Canchas-2 img,
+    .Canchas-3 img {
+        width: 120px;
+        height: 120px;
+        display: block;
+    }
+
+    /* Servicios Section */
+    .Servicios {
+        padding: 40px 20px;
+    }
+
+    .Servicios-content h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .Servicios-group,
+    .Servicios-group2,
+    .Servicios-group3 {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .Servicios-1,
+    .Servicios-2,
+    .Servicios-3 {
+        padding: 0 20px;
+    }
+
+    /* Blog Section */
+    .blog {
+        padding: 40px 20px;
+    }
+
+    .blog-Content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .blog-1 {
+        padding: 0;
+    }
+
+    .blog-1 img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .link {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Botones */
+    .btn-1 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    @media(max-width: 767px) {
+        /* Ocultar imágenes en la sección Canchas */
+        .general-2{
+            display: none;
+        }
+        .general-3{
+            display: none;
+        }
+    }
+    
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media(max-width: 380px) {
+    .header1-content h1 {
+        font-size: 28px;
+    }
+
+    .header-links a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .Canchas-content h2 {
+        font-size: 28px;
+    }
+
+    .Canchas-1 h3,
+    .Canchas-2 h3,
+    .Canchas-3 h3 {
+        font-size: 20px;
+    }
+}
+
+

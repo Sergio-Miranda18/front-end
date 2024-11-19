@@ -1,0 +1,203 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto; /* Permitir el desplazamiento vertical en el cuerpo */
+}
+
+.recuperacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.datosrecuperacion {
+    position: relative;
+    width: 500px;
+    height: 50vh;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s ease, height .2s ease;
+}
+
+/* Estilos para la barra de desplazamiento */
+.datosrecuperacion::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.datosrecuperacion::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.datosrecuperacion::-webkit-scrollbar-track {
+    background: transparent; /* Fondo de la pista de la barra de desplazamiento */
+}
+
+.icono-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px; 
+    height: 35px;
+    background-color: rgba(9, 15, 29, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em; 
+    color: #f1efef;
+    transition: background-color 0.3s ease;
+}
+
+.icono-cerrar:hover {
+    background-color: rgba(9, 15, 29, 1);
+}
+
+.contenedor-form-recuperacion h2 {
+    font-size: 2em; 
+    color: #f1efef;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedor-input {
+    position: relative;
+    width: 100%;
+    height: 45px; 
+    border-bottom: 2px solid #f1efef;
+    margin: 15px 0; 
+}
+
+.contenedor-input label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em; 
+    font-weight: 600;
+    pointer-events: none;
+    transition: 0.4s;
+    color: #f1efef;
+}
+
+.contenedor-input input:focus ~ label,
+.contenedor-input input:valid ~ label {
+    top: -10px;
+    font-size: 0.8em; 
+}
+
+.contenedor-input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1rem; 
+    color: #f1efef;
+    padding: 0 35px 0 5px;
+}
+
+.contenedor-input .icono {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em; 
+    color: #f1efef;
+    line-height: 45px;
+}
+
+.btnrecuperacion {
+    width: 100%;
+    height: 40px; 
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em; 
+    font-weight: bold;
+    background-color: #090f1d;
+    color: #f1efef;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.btnrrecuperacion:hover {
+    background-color: #131e36;
+}
+.inicio {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.inicio p {
+    color: #f1efef;
+    font-size: 0.9em; 
+}
+
+.inicio a {
+    color: #f1efef;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.inicio a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .datosrecuperacion {
+        width: 85%; /* Reducir un poco el ancho */
+        height: auto; /* Ajustar la altura automáticamente */
+        padding: 15px;
+    }
+
+    .contenedor-form-recuperacion h2 {
+        font-size: 1.4em; /* Reducir el tamaño del texto */
+    }
+
+    .contenedor-input {
+        margin: 8px 0; /* Reducir el margen entre campos */
+    }
+
+    .btnrecuperacion {
+        height: 45px; /* Ajustar ligeramente el tamaño del botón */
+        font-size: 0.9em;
+    }
+
+    .icono-cerrar {
+        width: 28px; 
+        height: 28px;
+        font-size: 0.9em; /* Ajustar el tamaño del icono */
+    }
+}
+
+@media (max-width: 480px) {
+    .datosrecuperacion {
+        width: 95%; /* Más ancho en pantallas muy pequeñas */
+        border-radius: 8px; /* Menos redondeo en esquinas */
+    }
+
+    .contenedor-form-recuperacion h2 {
+        font-size: 1.2em; /* Más pequeño para pantallas muy pequeñas */
+    }
+
+    .btnrecuperacion {
+        height: 40px; /* Botón ligeramente más pequeño */
+        font-size: 0.85em; /* Reducir texto del botón */
+    }
+
+    .icono-cerrar {
+        width: 25px; 
+        height: 25px;
+        font-size: 0.8em; /* Más pequeño el tamaño del icono */
+    }
+}
